@@ -1,0 +1,53 @@
+body {
+    background-color: #fffddc;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    background-color: bisque;
+    color: brown;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: center;
+    width: fit-content;
+    border-radius: 8px;
+}
+
+.cover-img {
+    height: 200px;
+    overflow: hidden;
+}
+
+.cover-img img {
+    width: 100%;
+    object-position: cover;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-info {
+    background: white; 
+    padding: 20px;
+    text-align: center; 
+    border-radius: 10px;
+    margin: 10px auto;
+    width: 600px;
+}
+
+.info-contacto {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+
