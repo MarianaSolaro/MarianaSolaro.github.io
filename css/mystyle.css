@@ -2,6 +2,7 @@ body {
     background-color: #fffddc;
     font-family: Arial, sans-serif;
     margin: 0;
+    font-size: 1em;
 }
 
 h1 {
@@ -18,37 +19,82 @@ h1 {
 .cover-img {
     height: 200px;
     overflow: hidden;
-    position: relative;
 }
 
 .cover-img img {
     width: 100%;
-    object-position: cover;
-}
-
-.profile-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
+    height: auto;
+    max-height: 30vh;
     object-fit: cover;
 }
 
-.profile-info {
+.profile-img {
+    width: 30%;
+    max-width: 10rem;
+    height: auto;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.profile-info, .info-contacto {
     background: white; 
-    padding: 20px;
+    padding: 1.5em;
     text-align: center; 
     border-radius: 10px;
-    margin: 10px auto;
-    width: 600px;
+    margin: 2em auto;
+    width: 70%;
+    box-sizing: border-box;
 }
 
-.info-contacto {
-    background: white;
-    padding: 20px;
-    text-align: center;
-    width: 600px;
-    margin: 20px auto;
-    border-radius: 10px;
+.info-contacto ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
 }
 
+@media (max-width: 768px) {
+    .profile-info, .info-contacto {
+        padding: 1em;
+        width: 75%;
+    }
 
+    h1 {
+        font-size: 1.2em;
+        margin: 10px auto;
+    }
+
+    .profile-img {
+        max-width: 8rem;
+    }
+
+    .cover-img img {
+        max-height: 25vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-info, .info-contacto {
+        padding: 0.5em;
+        width: 85%;
+    }
+
+    h1 {
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    .profile-img {
+        max-width: 7rem;
+    }
+
+    .cover-img img {
+        max-height: 20vh;
+    }
+
+    .info-contacto ul {
+        padding-left: 0;
+        margin: 0;
+        text-align: center;
+    }
+}
